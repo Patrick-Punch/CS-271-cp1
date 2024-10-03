@@ -113,9 +113,19 @@ int sum(int arr[], int n)
  *
  */
 double pie(long int n){
-    return 0;
-} 
-
+    double pi_val = 0;
+    for (int i = 0; i < n; i++) {
+        double term;
+        if (i % 2 == 0) {
+            term = 1 / (2.0 * i + 1); // Even # of terms -> positive
+        } else {
+            term = -1 / (2.0 * i + 1); // Odd # of terms -> negative
+        }
+        pi_val += term;
+    }
+    pi_val *= 4; // Multiply by 4 to get pi
+    return pi_val;
+}
 
 /* Function: main
  * -------------
