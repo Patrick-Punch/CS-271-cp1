@@ -93,7 +93,11 @@ int max(int arr[], int n)
  */
 int sum(int arr[], int n)
 {
-    return 0;
+    int total_val = arr[0];
+    for (int i = 1; i < n; i++){
+        total_val += arr[i];
+    }
+    return total_val;
 }
 
 
