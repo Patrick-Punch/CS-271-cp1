@@ -22,7 +22,14 @@
  */
 int add(int n)
 {
-    /** Your CODE here **/
+    // Start at zero, loop through integers adding as you go until you reach n -> return sum
+    int sum = 0;
+
+    // Loop from 0 to n
+    for (int i = 0; i <= n; i++){
+        sum += i;
+    }
+    return sum;
 }   
 
 
@@ -30,6 +37,10 @@ int add(int n)
  * -------------
  * calculates the Nth Fibonacci number using recursion. 
  *   e.g., fib(10) => 55
+ * function ﬁb(n):
+    if n <= 1:
+    return n
+    return ﬁb(n - 1) + ﬁb(n - 2)
  *
  * n: the Fibonacci number to calculate
  *
@@ -37,10 +48,18 @@ int add(int n)
  */
 int fib(int n)
 {
-    /** Your CODE here **/
+    if (n == 0) {
+        return 0; // Base case for 0
+    }
+    if (n == 1) {
+        return 1; // Base case for 1
+    }
+    else {
+        return fib(n - 1) + fib(n - 2);
+    }
 }
- 
- 
+
+
 /* Function: max
  * -------------
  * find the largest value in an array. 
@@ -53,7 +72,7 @@ int fib(int n)
  */
 int max(int arr[], int n)
 {
-    /** Your CODE here **/
+    return 0;
 }
 
 /* Function: sum
@@ -68,7 +87,7 @@ int max(int arr[], int n)
  */
 int sum(int arr[], int n)
 {
-    /** Your CODE here **/
+    return 0;
 }
 
 
@@ -84,7 +103,7 @@ int sum(int arr[], int n)
  *
  */
 double pie(long int n){
-    /** Your CODE here **/
+    return 0;
 } 
 
 
